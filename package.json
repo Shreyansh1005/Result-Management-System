@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "react-select": "^5.8.0"
+  }
+}
