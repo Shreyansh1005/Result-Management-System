@@ -1,0 +1,56 @@
+/* Container for the admin dashboard */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(8px); /* Glassy effect */
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .admin-dashboard h1 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Button styling */
+  .admin-dashboard button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #1e3c72;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+  }
+  
+  /* Button hover effect */
+  .admin-dashboard button:hover {
+    background-color: #2a5298;
+    transform: scale(1.05);
+  }
+  
+  /* Animation for heading */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

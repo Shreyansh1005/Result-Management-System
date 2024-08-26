@@ -1,0 +1,84 @@
+.footer-container {
+  background: #333; /* Dark background */
+  color: #f5f5f5; /* Light text color */
+  text-align: center;
+  padding: 40px 20px; /* Added top and bottom padding for better spacing */
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  overflow: hidden;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.footer-content {
+  max-width: 1200px; /* Align content centrally */
+  margin: 0 auto; /* Center align content */
+  padding: 0 20px; /* Padding for better spacing on smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px; /* Spacing between text and links */
+  animation: fadeInFooter 1.5s ease-in-out forwards;
+}
+
+.footer-links {
+  margin-bottom: 20px; /* Space between links and social icons */
+}
+
+.footer-link {
+  color: #f5f5f5; /* Light text color */
+  text-decoration: none;
+  margin: 0 15px; /* Horizontal spacing between links */
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  color: #f5f5f5; /* Light text color */
+  text-decoration: none;
+  margin: 0 10px; /* Horizontal spacing between icons */
+  font-size: 1rem;
+}
+
+.footer-social-icon:hover {
+  color: #b0b0b0; /* Slightly lighter color on hover */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeInFooter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+    margin: 0 10px; /* Reduced spacing on smaller screens */
+  }
+
+  .footer-social-icon {
+    font-size: 0.9rem;
+    margin: 0 8px; /* Reduced spacing on smaller screens */
+  }
+}
