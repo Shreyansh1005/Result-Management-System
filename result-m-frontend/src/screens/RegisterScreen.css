@@ -1,0 +1,92 @@
+/* Styling for the register container */
+body {
+    margin: 0 auto;
+    background: linear-gradient(120deg, #a2c2e5 0%, #e0e7f0 50%, #9bb0d6 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+  }
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: rgba(255, 251, 251, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Glassy effect */
+    width: 100%;
+    max-width: 450px; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .register-container h1 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    animation: fadeInText 1.5s ease-in-out;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #1e3c72;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #1e3c72;
+    outline: none;
+  }
+  
+  .register-btn {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #1e3c72;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #2a5298;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
